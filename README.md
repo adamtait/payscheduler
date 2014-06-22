@@ -7,7 +7,8 @@ See the [Venmo API Developer documentation](https://developer.venmo.com/docs/end
 
 ## Usage
 
-`lein run user-a`
+`lein run <config-file-path> <payment-name>`
+`java -cp target/ clojure.main -m com.adamtait.payscheduler <config-file> <payment-name>`
 
 ## License
 
