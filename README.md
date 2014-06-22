@@ -8,11 +8,12 @@ See the [Venmo API Developer documentation](https://developer.venmo.com/docs/end
 ## Usage
 
 `lein run <config-file-path> <payment-name>`
+
 `java -cp target/ clojure.main -m com.adamtait.payscheduler <config-file> <payment-name>`
 
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2014 Adam Tait
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
