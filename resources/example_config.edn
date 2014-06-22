@@ -1,0 +1,32 @@
+;; EXAMPLE CONFIGURATION
+;; keys - [:payments :users] are required;  [:log] is optional
+
+;; :payments - identifier for a type of payment to be made.
+;; contents: required keys are [:from :to :amount :note]
+
+;; :users - identifier keyword for a Venmo user account. referenced as [:from :to] in a :payments map
+;; contents: required keys are access_token & ONE OF [phone, email, user_id]
+
+;; :log - specify a custom log path for responses to be printed to
+;; contents: optional keys are [:filepath]
+
+
+{:payments {:for-my-b    {:from :jayz
+                          :to :beyonce
+                          :amount "1.00"
+                          :note "b to the izzo"}
+            :from-your-b {:from :beyonce
+                          :to :jayz
+                          :amount "1.00"
+                          :note "drunk in love"}}
+
+ :users {:jayz       {:access_token "jayz's Venmo access token"
+                      :phone "15556667777"
+                      :email "jay@z.com"
+                      :user_id "jayz"}
+         :beyonce    {:access_token "beyonce's Venmo access token"
+                      :phone "12223334444"
+                      :email "beyonce@knowles.com"
+                      :user_id "beyonce"}}
+
+ :log {:filepath "/var/log/payscheduler.log"}}
