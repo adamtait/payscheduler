@@ -21,7 +21,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ## configuration
 
-(defn- load-configuration
+(defn load-configuration
   "returns a clojure hash-map, given a local file path"
   [file-path]
   (-> file-path
@@ -119,3 +119,10 @@
       (if (= 200 (:status response))
         0
         1))))
+
+
+(def m {:adam 4
+        :tam 6
+        "adam" 7})
+
+(get m :adam)
