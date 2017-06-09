@@ -17,3 +17,8 @@ Copyright © 2014 Adam Tait
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
+
+
+## Update
+
+Sometime in 2016, Venmo changed it's business model and shut down it's API. Unfortunately, this means that _payscheduler_ will no longer work as intended. Venmo now suggests that you use the Paypal API instead; I have no intention of using the Paypal API so I haven't bothered to update _payscheduler_.
